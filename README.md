@@ -50,6 +50,7 @@ COPY --from=plugins /build/output/ /etc/krakend/plugins/
 "security/cors": {
     ...
     "expose_headers": ["X-Request-Id"]
-},```
+},
+```
 
 **P.S.S:** локально используя Docker и процессоры M* (скорее всего любые ARM) лучше указать конкретную платформу для образов `platform: "linux/x86_64"`, в противном случае придется танцевать с бубном при сборке.
